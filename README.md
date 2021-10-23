@@ -38,10 +38,12 @@ python NAS_FUSE.py
 
 ### Results on Transfer Learning
 The graph below shows the comparison of task affinity between our approach and Taskonomy approach for each task. 
-The atlas plot of tasks (right panel) found from our approach indicates the computed relationship between tasks according to locations in space.
-
 <p align="center">
   <img src="images/fig_taskonomy_1.jpg" height="350" title="distance">
+</p>
+
+The atlas plot of tasks (below) found from our approach indicates the computed relationship between tasks according to locations in space.
+<p align="center">
   <img src="images/fig_taskonomy_2.png" height="350" title="plot">
 </p>
 
