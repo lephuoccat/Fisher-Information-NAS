@@ -54,29 +54,39 @@ The atlas plot of tasks (below) found from our approach indicates the computed r
   <img src="images/fig_taskonomy_2.png" height="350" title="plot">
 </p>
 
-The table below indicates the comparison of the NAS performance with handdesigned classifiers and state-of-the-art methods on Task 3 in
-MNIST based on the discovered closest task, Task 7 
+### Results on Transfer Learning
+The table below indicates the comparison of our TA-NAS framework with the hand-designed image classifiers, and state-of-the-art NAS
+methods on Task 2 (binary classification) of MNIST.
 | Architecture | Accuracy (%) | Paramameters (M) | GPU days |
 | :---         |    :---:  |     :---:        |  :---:   |
-| VGG-16       | 99.55     |  14.72    | - |
-| ResNet-18    | 99.56     |  11.44    | - |
+| VGG-16       | 99.41     |  14.72    | - |
+| ResNet-18    | 99.47     |  11.44    | - |
 | DenseNet-121 | 99.61     |  6.95     | - |
-| Random Search| 99.59     |  2.23     | 4 |
-| ENAS         | 97.77     |  4.60     | 4 |
-| DARTS        | 99.51     |  2.37     | 2 |
-| LD-NAS (ours)| 99.67     |  2.28     | 2 |
+| Random Search| 99.52     |  2.12     | 5 |
+| ENAS (1st)   | 94.29     |  4.60     | 2 |
+| ENAS (2nd)   | 94.71     |  4.60     | 4 |
+| DARTS (1st)  | 98.82     |  2.17     | 2 |
+| DARTS (2nd)  | 99.44     |  2.23     | 4 |
+| PC-DARTS (1st)| 98.76    |  1.78     | 2 |
+| PC-DARTS (2nd)| 99.88    |  2.22     | 4 |
+| TE-NAS        | 99.71    |  2.79     | 2 |
+| TA-NAS (ours) | 99.86    |  2.14     | 2 |
 
-The table below indicates the comparison of the NAS performance with handdesigned classifiers and state-of-the-art methods on Task 6 in
-CIFAR-10 based on the discovered closest task, Task 7. 
+The table below indicates the Comparison of our TA-NAS framework with the hand-designed image classifiers, and state-of-the-art NAS methods on Task 2 (4-class classification) of CIFAR-10.
 | Architecture | Accuracy (%) | Paramameters (M) | GPU days |
 | :---         |    :---:  |     :---:        |  :---:   |
 | VGG-16       | 86.75     |  14.72    | - |
 | ResNet-18    | 86.93     |  11.44    | - |
 | DenseNet-121 | 88.12     |  6.95     | - |
 | Random Search| 88.55     |  3.65     | 5 |
-| ENAS         | 75.22     |  4.60     | 4 |
-| DARTS        | 90.11     |  3.12     | 2 |
-| LD-NAS (ours)| 90.87     |  3.02     | 2 |
+| ENAS (1st)   | 73.23     |  4.60     | 2 |
+| ENAS (2nd)   | 75.22     |  4.60     | 4 |
+| DARTS (1st)  | 90.11     |  3.12     | 2 |
+| DARTS (2nd)  | 91.19     |  3.28     | 4 |
+| PC-DARTS (1st)| 92.07    |  3.67     | 2 |
+| PC-DARTS (2nd)| 92.49    |  3.66     | 4 |
+| TE-NAS        | 91.02    |  3.78     | 2 |
+| TA-NAS (ours) | 92.58    |  3.13     | 2 |
 
 ## Authors
 
