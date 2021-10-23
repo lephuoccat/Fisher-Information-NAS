@@ -26,7 +26,7 @@ python train_task_cifar.py
 python train_task_cifar100.py
 python train_task_taskonomy.py
 ```
-* Next, we compute the Fisher Information matrices for each pair of tasks using the base task's network. Then, we identify the closest tasks based on the Fr\'echet of the Fisher Information matrices
+* Next, we compute the Fisher Information matrices for each pair of tasks using the base task's network. Then, we identify the closest tasks based on the Fréchet of the Fisher Information matrices
 ```
 python fisher-distance.py
 python fisher-distance_taskonomy.py
