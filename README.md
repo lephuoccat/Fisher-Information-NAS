@@ -36,6 +36,13 @@ Lastly, the FUSE algorithm is applied to find the suitable architecture for the 
 python NAS_FUSE.py
 ```
 
+### Fisher Task Distance (FTD) Consistency
+The following graphs indicate the consistancy of the Fisher Task distance on various datasets and different neural network architectures.
+<p align="center">
+  <img src="images/fig1.jpg" height="350" title="distance1">
+  <br><img src="images/fig2.jpg" height="350" title="distance2">
+</p>
+
 ### Results on Transfer Learning
 The graph below shows the comparison of task affinity between our approach and Taskonomy approach for each task. 
 <p align="center">
