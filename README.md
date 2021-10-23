@@ -31,7 +31,7 @@ python train_task_taskonomy.py
 python fisher-distance.py
 python fisher-distance_taskonomy.py
 ```
-Lastly, the FUSE algorithm is applied to find the suitable architecture for the incoming task:
+* Lastly, the FUSE algorithm is applied to find the suitable architecture for the incoming task:
 ```
 python NAS_FUSE.py
 ```
