@@ -36,11 +36,13 @@ Lastly, the FUSE algorithm is applied to find the suitable architecture for the 
 python NAS_FUSE.py
 ```
 
-### Results
-The confusion matrices below shows the mean (left) and standard deviation (right) of the distances between 8 baseline tasks from MNIST, CIFAR-10 datasets.
+### Results on Transfer Learning
+The graph below shows the comparison of task affinity between our approach and Taskonomy approach for each task. 
+The atlas plot of tasks (right panel) found from our approach indicates the computed relationship between tasks according to locations in space.
+
 <p align="center">
-  <img src="images/fig1.jpg" height="350" title="Mean">
-  <img src="images/fig2.jpg" height="350" title="Sig">
+  <img src="images/fig_taskonomy_1.jpg" height="350" title="distance">
+  <img src="images/fig_taskonomy_2.png" height="350" title="plot">
 </p>
 
 The table below indicates the comparison of the NAS performance with handdesigned classifiers and state-of-the-art methods on Task 3 in
