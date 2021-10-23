@@ -22,11 +22,14 @@ on visual tasks in the Taskonomy dataset. Additionally, we show how the proposed
 * First, we define tasks in MNIST, CIFAR-10, CIFAR-100, ImageNet, Taskonomy datasets and use the CNN to train on each task. The weights of the trained CNN is saved for each task.
 ```
 python train_task_mnist.py
-python train_task_cifar_repeat.py
+python train_task_cifar.py
+python train_task_cifar100.py
+python train_task_taskonomy.py
 ```
-* Next, we compute the Fisher Information matrices for each pair of tasks using the base task's network. Then, we identify the closest tasks based on the log-determinant of the Fisher Information matrices
+* Next, we compute the Fisher Information matrices for each pair of tasks using the base task's network. Then, we identify the closest tasks based on the Fr\'echet of the Fisher Information matrices
 ```
-python log_det_distance.py
+python fisher-distance.py
+python fisher-distance_taskonomy.py
 ```
 Lastly, the FUSE algorithm is applied to find the suitable architecture for the incoming task:
 ```
@@ -68,5 +71,5 @@ CIFAR-10 based on the discovered closest task, Task 7.
 
 Cat P. Le (cat.le@duke.edu), 
 <br>Mohammadreza Soltani, 
-<br>Robert Ravier, 
+<br>Juncheng Dong, 
 <br>Vahid Tarokh
